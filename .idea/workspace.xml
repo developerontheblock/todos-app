@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="89e06ce7-90c8-48cd-8dd8-79b19d2bd669" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../public/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1ba0xL73t3WajuNI3nZsGraWEGK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="89e06ce7-90c8-48cd-8dd8-79b19d2bd669" name="Default Changelist" comment="" />
+      <created>1588855142157</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588855142157</updated>
+      <workItem from="1588855143535" duration="1030000" />
+      <workItem from="1588856418647" duration="340000" />
+    </task>
+    <task id="LOCAL-00001" summary="setup React app, updated README">
+      <created>1588855581597</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588855581597</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="setup React app, updated README" />
+    <option name="LAST_COMMIT_MESSAGE" value="setup React app, updated README" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="558" y="96" width="794" height="854" key="CommitChangelistDialog2" timestamp="1588855542253">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state x="558" y="96" width="794" height="854" key="CommitChangelistDialog2/0.0.1920.1053/1920.0.1920.1080@0.0.1920.1053" timestamp="1588855542253" />
+    <state x="555" y="261" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1588855585247">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state x="555" y="261" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.0.1920.1080@0.0.1920.1053" timestamp="1588855585247" />
+    <state x="623" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1588856520905">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state x="623" y="231" width="672" height="678" key="search.everywhere.popup/0.0.1920.1053/1920.0.1920.1080@0.0.1920.1053" timestamp="1588856520905" />
+  </component>
+</project>
