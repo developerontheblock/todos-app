@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89e06ce7-90c8-48cd-8dd8-79b19d2bd669" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../public/.gitignore" afterDir="false" />
+    <list default="true" id="89e06ce7-90c8-48cd-8dd8-79b19d2bd669" name="Default Changelist" comment="setup project">
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../public/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588855142157</updated>
       <workItem from="1588855143535" duration="1030000" />
-      <workItem from="1588856418647" duration="340000" />
+      <workItem from="1588856418647" duration="1499000" />
     </task>
     <task id="LOCAL-00001" summary="setup React app, updated README">
       <created>1588855581597</created>
@@ -48,7 +49,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588855581597</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="setup project">
+      <created>1588856843279</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588856843279</updated>
+    </task>
+    <task id="LOCAL-00003" summary="setup project">
+      <created>1588857020600</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588857020600</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -56,17 +71,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="setup React app, updated README" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup React app, updated README" />
+    <MESSAGE value="setup project" />
+    <option name="LAST_COMMIT_MESSAGE" value="setup project" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="558" y="96" width="794" height="854" key="CommitChangelistDialog2" timestamp="1588855542253">
+    <state x="558" y="96" width="794" height="854" key="CommitChangelistDialog2" timestamp="1588857318265">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="558" y="96" width="794" height="854" key="CommitChangelistDialog2/0.0.1920.1053/1920.0.1920.1080@0.0.1920.1053" timestamp="1588855542253" />
-    <state x="555" y="261" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1588855585247">
+    <state x="558" y="96" width="794" height="854" key="CommitChangelistDialog2/0.0.1920.1053/1920.0.1920.1080@0.0.1920.1053" timestamp="1588857318265" />
+    <state x="555" y="261" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1588857033533">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="555" y="261" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.0.1920.1080@0.0.1920.1053" timestamp="1588855585247" />
+    <state x="555" y="261" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.0.1920.1080@0.0.1920.1053" timestamp="1588857033533" />
+    <state x="787" y="260" width="326" height="520" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1588856828962">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state x="787" y="260" width="326" height="520" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1920.1053/1920.0.1920.1080@0.0.1920.1053" timestamp="1588856828962" />
     <state x="623" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1588856520905">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
