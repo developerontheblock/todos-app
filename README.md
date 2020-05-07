@@ -1,68 +1,55 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Notes App
 
-## Available Scripts
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+Create React App is a comfortable environment for learning React, and is the best way to start building a new single-page application in React.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+It sets up your development environment so that you can use the latest JavaScript features, provides a nice developer experience, and optimizes your app for production. You’ll need to have Node >= 8.10 and npm >= 5.6 on your machine. To create a project, run:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```bash
+npx create-react-app my-app
+cd my-app
+npm start
 
-### `npm test`
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Requirements
+Студентите разработват самостоятелен курсов проект в рамките на триместъра. Изискванията за проекта са както следва:
 
-### `npm run build`
+Да се създаде приложение с ReactJS, което да има следната функционалност:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Автентикация:
+ - регистрация, при която потребителят by default няма администраторски права
+ - потребител може да влезе в системата с потребителско име и парола
+ - потребителите могат да бъдат или да не бъдат администратори
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+2. Управление на потребители
+ - администраторите могат да добавят, редактират, изтриват и преглеждат потребителите в системата, както и да дават администраторски права на съществуващи потребители
+ - при изтриване на даден потребител, всички негови задачи също трябва да бъдат изтрити ( Cascade Deletion )
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Управление на задачи
+ - всеки потребител може да създава, изтрива, редактира и преглежда задачи
+ - задачата се състои от: заглавие; описание; оценка (време в часове); 
+ - статут на задачата (приключена, чакаща изпълнение). 
+ - редакцията/изтриването на задачите става по следният начин 
+   - администраторът може да изтрива/променя всички задачи, а потребителят - само тези, които той е създал
 
-### `npm run eject`
+Приложението да се реализира със следните детайли
+ - LocalStorage като база данни
+ - React Routing за навигация между компонентите
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Използвайте версия на пакетите по ваш избор. 
+При завършен проект изпратете линк към гитхъб репозитори или архив на проекта ( без node_modules ) на мейл ivanov.todor1@gmail.com до края на 9та седмица. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Ако имате някакви въпроси, пишете ми на мейл ivanov.todor1@gmail.com
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Начин на оценяване
+В десетата седмица на сесията се провежда защита на курсовите проекти на студентите. Защитата включва обяснения на отделни компоненти от създаването на проектите, както и дописване/поправяне на функционалност, която е пропусната. Оценява се по шестобална система, като създаването на проекта носи 30% от крайната оценка, а защитата му – 70%. При получена оценка слаб 2 на защитата, крайната оценка на студента е слаб 2.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Неполучилите положителна оценка се явяват на поправителен изпит, на който се дава втора възможност за защита на проект. Оценката от създаването на курсовия проект от предишни явявания се съхранява.
 
-## Learn More
+Ако и на поправката студентът не събере необходимата минимална оценка се явява на ликвидационен изпит като на ликвидацията не се запазват оценки от предишни явявания. Тогава се зачита само резултатът от самия ликвидационен изпит, като оценяването става само върху разработка на малко приложение.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## License
+[Docs](https://docs.google.com/document/d/1jpIJo9LBsPsH5L2QzlfYQ_yry_EU3Nrn6l05ZR4jV_E/edit)
