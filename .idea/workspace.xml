@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89e06ce7-90c8-48cd-8dd8-79b19d2bd669" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../src/components/layout/Layout.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../src/components/layout/footer/Footer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../src/components/layout/header/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../src/components/layout/main/Main.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../db/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/components/layout/footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/components/layout/footer/Footer.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +36,7 @@
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -56,7 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588855142157</updated>
       <workItem from="1588855143535" duration="1030000" />
-      <workItem from="1588856418647" duration="10755000" />
+      <workItem from="1588856418647" duration="12554000" />
     </task>
     <task id="LOCAL-00001" summary="setup React app, updated README">
       <created>1588855581597</created>
@@ -107,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588858614408</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added header and footer">
+      <created>1588926333989</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588926333989</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,21 +122,22 @@
     <MESSAGE value="setup React app, updated README" />
     <MESSAGE value="setup project" />
     <MESSAGE value="README updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="README updated" />
+    <MESSAGE value="added header and footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="added header and footer" />
   </component>
   <component name="WindowStateProjectService">
     <state x="823" y="439" width="263" height="167" key="#ESLint" timestamp="1588868335071">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="823" y="439" width="263" height="167" key="#ESLint/0.0.1920.1053/1920.0.1920.1080@0.0.1920.1053" timestamp="1588868335071" />
-    <state x="558" y="96" width="794" height="854" key="CommitChangelistDialog2" timestamp="1588858614269">
+    <state x="558" y="96" width="794" height="854" key="CommitChangelistDialog2" timestamp="1588926333893">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="558" y="96" width="794" height="854" key="CommitChangelistDialog2/0.0.1920.1053/1920.0.1920.1080@0.0.1920.1053" timestamp="1588858614269" />
-    <state x="555" y="261" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1588858615586">
+    <state x="558" y="96" width="794" height="854" key="CommitChangelistDialog2/0.0.1920.1053/1920.0.1920.1080@0.0.1920.1053" timestamp="1588926333893" />
+    <state x="555" y="261" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1588926335223">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="555" y="261" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.0.1920.1080@0.0.1920.1053" timestamp="1588858615586" />
+    <state x="555" y="261" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.0.1920.1080@0.0.1920.1053" timestamp="1588926335223" />
     <state x="787" y="260" width="326" height="520" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1588856828962">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>

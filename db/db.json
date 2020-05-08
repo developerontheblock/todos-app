@@ -1,0 +1,65 @@
+{
+  "users": [{
+    "_id": "5eb51e3dc86c9bd106815aba",
+    "isActive": true,
+    "isAdmin": false,
+    "picture": "http://placehold.it/32x32",
+    "age": 20,
+    "name": "Gordon Holcomb",
+    "email": "gordonholcomb@tingles.com",
+    "password": 12345
+  },
+    {
+      "_id": "5eb51e3d941e142f584b5eea",
+      "isActive": false,
+      "isAdmin": true,
+      "picture": "http://placehold.it/32x32",
+      "age": 32,
+      "name": "Maxine Alexander",
+      "email": "maxinealexander@tingles.com",
+      "password": 12345
+    },
+    {
+      "_id": "5eb51e3d546530d90f97096d",
+      "isActive": false,
+      "isAdmin": true,
+      "picture": "http://placehold.it/32x32",
+      "age": 28,
+      "name": "Krista Rodgers",
+      "email": "kristarodgers@tingles.com",
+      "password": 12345
+    },
+    {
+      "_id": "5eb51e3df8e81ef6fb4a16d1",
+      "isActive": false,
+      "isAdmin": false,
+      "picture": "http://placehold.it/32x32",
+      "age": 34,
+      "name": "Ola Carr",
+      "email": "olacarr@tingles.com",
+      "password": 12345
+    },
+    {
+      "_id": "5eb51e3df8d70eb6e845b534",
+      "isActive": false,
+      "isAdmin": true,
+      "picture": "http://placehold.it/32x32",
+      "age": 23,
+      "name": "Howe Flowers",
+      "email": "howeflowers@tingles.com",
+      "password": 12345
+    },
+    {
+      "_id": "5eb51e3d5bf5a79d8d47dc75",
+      "isActive": true,
+      "isAdmin": false,
+      "picture": "http://placehold.it/32x32",
+      "age": 30,
+      "name": "Dollie Mccarthy",
+      "email": "dolliemccarthy@tingles.com",
+      "password": 12345
+    }],
+
+   "notes": []
+
+  }
