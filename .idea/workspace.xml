@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89e06ce7-90c8-48cd-8dd8-79b19d2bd669" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../src/core/api/users.api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/components/layout/main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/components/layout/main/Main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588855142157</updated>
       <workItem from="1588855143535" duration="1030000" />
-      <workItem from="1588856418647" duration="12720000" />
+      <workItem from="1588856418647" duration="16737000" />
     </task>
     <task id="LOCAL-00001" summary="setup React app, updated README">
       <created>1588855581597</created>
@@ -117,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588928248449</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added json-server start command and port">
+      <created>1588928433159</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1588928433159</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,21 +137,22 @@
     <MESSAGE value="README updated" />
     <MESSAGE value="added header and footer" />
     <MESSAGE value="added random generated json data(users)" />
-    <option name="LAST_COMMIT_MESSAGE" value="added random generated json data(users)" />
+    <MESSAGE value="added json-server start command and port" />
+    <option name="LAST_COMMIT_MESSAGE" value="added json-server start command and port" />
   </component>
   <component name="WindowStateProjectService">
     <state x="823" y="439" width="263" height="167" key="#ESLint" timestamp="1588868335071">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="823" y="439" width="263" height="167" key="#ESLint/0.0.1920.1053/1920.0.1920.1080@0.0.1920.1053" timestamp="1588868335071" />
-    <state x="558" y="96" width="794" height="854" key="CommitChangelistDialog2" timestamp="1588928248376">
+    <state x="558" y="96" width="794" height="854" key="CommitChangelistDialog2" timestamp="1588928433070">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="558" y="96" width="794" height="854" key="CommitChangelistDialog2/0.0.1920.1053/1920.0.1920.1080@0.0.1920.1053" timestamp="1588928248376" />
-    <state x="555" y="261" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1588928250169">
+    <state x="558" y="96" width="794" height="854" key="CommitChangelistDialog2/0.0.1920.1053/1920.0.1920.1080@0.0.1920.1053" timestamp="1588928433070" />
+    <state x="555" y="261" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1588928434357">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="555" y="261" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.0.1920.1080@0.0.1920.1053" timestamp="1588928250169" />
+    <state x="555" y="261" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.0.1920.1080@0.0.1920.1053" timestamp="1588928434357" />
     <state x="787" y="260" width="326" height="520" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1588856828962">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
