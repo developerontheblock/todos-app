@@ -1,19 +1,17 @@
-import React, {useEffect, useState} from 'react';
-import { getAllUsers } from '../../../core/api/users.api';
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import {UsersList} from '../users/users-list/UsersList';
+import {User} from '../users/user/User';
 
 export function Main(){
 
-    const [users, setUsers] = useState([]);
-
-    useEffect(()=>{
-            getAllUsers().then((apiUsers) => {
-            setUsers(apiUsers.data)
-            })
-    });
     return(
         <div className="main-content">
-            <span>Main content</span>
-            {JSON.stringify(users)}
+         <Switch>
+             <Route exact path="/users" component={UsersList}></Route>
+             <Route exact path="/users/:id" component={User}></Route>
+
+         </Switch>
         </div>
     );
 }
