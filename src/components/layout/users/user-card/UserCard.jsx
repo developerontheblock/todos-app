@@ -10,7 +10,7 @@ export function UserCard({user}) {
                 <img src={user.picture} alt= {user.name}/>
             </div>
             <div className="info-holder">
-                <div className="name"><Link to={`/users/${user._id}`}>{user.name}</Link></div>
+                <div className="name"><Link to={`/users/${user.id}`}>{user.name}</Link></div>
                 <div className="age">Age: {user.age}</div>
                 <div className="email">Email: {user.email}</div>
             </div>

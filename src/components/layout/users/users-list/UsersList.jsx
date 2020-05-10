@@ -9,7 +9,7 @@ export function UsersList(){
     useEffect(() =>{
         getAllUsers().then((allUsers) => {
             setUsers(allUsers.data)
-        });
+            });
     }, []);
 
     return(

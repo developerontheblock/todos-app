@@ -13,19 +13,19 @@ export class User extends Component{
     }
 
     componentDidMount(){
-        console.log(this.state.user);
+        console.log(this.props);
         getUserById(this.props.match.params.id).then((response) => {
             this.setState(
                 {
                     user: response.data
-                });
+                });              
         });
     }
 
     render(){
         return(
             <div className="single-user">
-               <UserCard user={this.state.user} />
+              <UserCard user={this.state.user}></UserCard>
             </div>
         )
     }

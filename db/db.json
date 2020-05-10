@@ -1,6 +1,6 @@
 {
   "users": [{
-    "_id": "5eb51e3dc86c9bd106815aba",
+    "id": "5eb51e3dc86c9bd106815aba",
     "isActive": true,
     "isAdmin": false,
     "picture": "https://picsum.photos/200/300?random=1.jpg",
@@ -10,7 +10,7 @@
     "password": 12345
   },
     {
-      "_id": "5eb51e3d941e142f584b5eea",
+      "id": "5eb51e3d941e142f584b5eea",
       "isActive": false,
       "isAdmin": true,
       "picture": "https://picsum.photos/200/300?random=2.jpg",
@@ -20,7 +20,7 @@
       "password": 12345
     },
     {
-      "_id": "5eb51e3d546530d90f97096d",
+      "id": "5eb51e3d546530d90f97096d",
       "isActive": false,
       "isAdmin": true,
       "picture": "https://picsum.photos/200/300?random=3.jpg",
@@ -30,7 +30,7 @@
       "password": 12345
     },
     {
-      "_id": "5eb51e3df8e81ef6fb4a16d1",
+      "id": "5eb51e3df8e81ef6fb4a16d1",
       "isActive": false,
       "isAdmin": false,
       "picture": "https://picsum.photos/200/300?random=4.jpg",
@@ -40,7 +40,7 @@
       "password": 12345
     },
     {
-      "_id": "5eb51e3df8d70eb6e845b534",
+      "id": "5eb51e3df8d70eb6e845b534",
       "isActive": false,
       "isAdmin": true,
       "picture": "https://picsum.photos/200/300?random=5.jpg",
@@ -50,7 +50,7 @@
       "password": 12345
     },
     {
-      "_id": "5eb51e3d5bf5a79d8d47dc75",
+      "id": "5eb51e3d5bf5a79d8d47dc75",
       "isActive": true,
       "isAdmin": false,
       "picture": "https://picsum.photos/200/300?random=6.jpg",
