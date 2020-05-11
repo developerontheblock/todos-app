@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import './Login.css';
 import { login } from '../../../core/api/users.api';
+import { Redirect } from 'react-router-dom';
 
 export function Login(props){
 
     const [userData, setUserData] = useState({});
+    const [isLoggedUser, setLoggedUser] = useState(false);
 
     const onInputChange = (event) => {
         event.persist();
@@ -19,12 +21,15 @@ export function Login(props){
         event.preventDefault();
         login(userData).then(() => {
             console.log("Successful login");
+            setLoggedUser(true);
         }).catch((err) => {
             console.log(err);
         })
     };
 
     return(
+        <>
+        { isLoggedUser && <Redirect to="/"></Redirect> }
         <div className="login-wrapper">
             <form className="login-form" onSubmit={onFormSubmit}>
                 <div className="form-group">
@@ -38,5 +43,6 @@ export function Login(props){
                 <button className="btn btn-primary">Login</button>
             </form>
         </div>
+        </>
     )
 }

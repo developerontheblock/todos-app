@@ -2,6 +2,10 @@ import axios from  'axios';
 
 const apiUrl = 'http://localhost:3005';
 
+export function getLoggedUser(){
+    return JSON.parse(localStorage.getItem('loggedUser'));
+}
+
 export function getAllUsers() {
     return axios.get(`${apiUrl}/users`);
 }

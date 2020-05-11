@@ -2,14 +2,15 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import {UsersList} from '../users/users-list/UsersList';
 import {User} from '../users/user/User';
+import {AuthenticatedRoute} from '../../../core/guards/AuthenticatedRoute';
 
 export function Main(){
 
     return(
         <div className="main-content">
          <Switch>
-             <Route exact path="/users" component={UsersList}></Route>
-             <Route exact path="/users/:id" component={User}></Route>
+             <AuthenticatedRoute exact path="/users" component={UsersList} />
+             <AuthenticatedRoute exact path="/users/:id" component={User} />
          </Switch>
         </div>
     );
