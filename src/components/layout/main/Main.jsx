@@ -10,7 +10,6 @@ export function Main(){
          <Switch>
              <Route exact path="/users" component={UsersList}></Route>
              <Route exact path="/users/:id" component={User}></Route>
-
          </Switch>
         </div>
     );
