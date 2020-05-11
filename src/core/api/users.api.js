@@ -26,3 +26,7 @@ export async function login(userData){
 
     throw new Error('Incorrect username or password');
 }
+
+export function logout(){
+    localStorage.removeItem('loggedUser');
+}

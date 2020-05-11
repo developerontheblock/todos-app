@@ -1,8 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, Redirect } from 'react-router-dom';
+import { logout } from '../../../core/api/users.api';
 
 export function Header(){
+
+    const [isLoggedOut, setLogOutFlag] = useState(false);
+
+    const onLogout = (event) => {
+        logout();
+        setLogOutFlag(true);
+    }
+
     return(
+        <>
+        {isLoggedOut && <Redirect to="/login" />}
         <div className="header">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <a className="navbar-brand" href="#">Navbar</a>
@@ -40,9 +51,10 @@ export function Header(){
                         <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
                             <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
-                    <button>Log out</button>
+                    <button className="logout btn btn-outline-danger ml-2 my-2 my-sm-0" onClick={onLogout}>Logout</button>
                 </div>
             </nav>
         </div>
+        </>
     );
 }
