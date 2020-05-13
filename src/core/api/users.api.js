@@ -14,6 +14,16 @@ export function getUserById(id) {
     return axios.get(`${apiUrl}/users/${id}`);
 }
 
+export async function register(userData){
+    userData = {
+        ...userData,
+        isActive: true,
+        isAdmin: false,
+        picture: "https://picsum.photos/200/300?random=1.jpg"
+    }
+    return axios.post(`${apiUrl}/users`, userData);
+}
+
 export async function login(userData){
     const users = (await getAllUsers()).data;
 

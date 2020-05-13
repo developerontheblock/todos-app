@@ -9,7 +9,7 @@
     width: 400px;
     border: 1px solid black;
     border-radius: 10px;
-    background-color: cornsilk;
+    background-color: rgb(218, 244, 253);
     padding: 10px;
     display: flex;
     flex-direction: column;

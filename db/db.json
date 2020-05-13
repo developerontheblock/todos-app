@@ -1,14 +1,15 @@
 {
-  "users": [{
-    "id": "5eb51e3dc86c9bd106815aba",
-    "isActive": true,
-    "isAdmin": false,
-    "picture": "https://picsum.photos/200/300?random=1.jpg",
-    "age": 20,
-    "name": "Gordon Holcomb",
-    "email": "gordonholcomb@tingles.com",
-    "password": 12345
-  },
+  "users": [
+    {
+      "id": "5eb51e3dc86c9bd106815aba",
+      "isActive": true,
+      "isAdmin": false,
+      "picture": "https://picsum.photos/200/300?random=1.jpg",
+      "age": 20,
+      "name": "Gordon Holcomb",
+      "email": "gordonholcomb@tingles.com",
+      "password": 12345
+    },
     {
       "id": "5eb51e3d941e142f584b5eea",
       "isActive": false,
@@ -58,8 +59,27 @@
       "name": "Dollie Mccarthy",
       "email": "dolliemccarthy@tingles.com",
       "password": 12345
-    }],
-
-   "notes": []
-
-  }
+    },
+    {
+      "name": "Alexandar Draev",
+      "email": "alex@abv.bg",
+      "password": "12345",
+      "age": "11",
+      "isActive": true,
+      "isAdmin": false,
+      "picture": "https://picsum.photos/200/300?random=1.jpg",
+      "id": "Myj2-XU"
+    },
+    {
+      "name": "Alexandar Draev",
+      "email": "draev@gmail.com",
+      "password": "123456",
+      "age": "33",
+      "isActive": true,
+      "isAdmin": false,
+      "picture": "https://picsum.photos/200/300?random=1.jpg",
+      "id": "YGUCy9g"
+    }
+  ],
+  "notes": []
+}
