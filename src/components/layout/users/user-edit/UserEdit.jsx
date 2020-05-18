@@ -1,10 +1,11 @@
 import React from 'react';
-import { useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
+import './UserEdit.css'
 import { getUserById, editUser } from '../../../../core/api/users.api';
 
 export function UserEdit(props) {
 
-    const [editedUser, setEditedUser] = useState({});
+    const [editedUser, setEditedUser] = useState({ name: '', age: 0, email: '', password: '', isActive: false, isAdmin: false });
 
     useEffect(() => {
         getUserById(props.computedMatch.params.id).then((currentUser) => {
@@ -15,18 +16,18 @@ export function UserEdit(props) {
     const onInputChange = (event) => {
         event.persist();
 
-        setEditedUser((prevState)=> ({
+        setEditedUser((prevState) => ({
             ...prevState,
             [event.target.name]: event.target.value
         }));
     }
 
-    const onFormSubmit = (event) =>{
+    const onFormSubmit = (event) => {
         event.preventDefault();
-        editUser(editedUser).then(() =>{
+        editUser(editedUser).then(() => {
             console.log("asdasdasd");
         })
-        .catch((err) => console.log(err))
+            .catch((err) => console.log(err))
     }
 
     return (
@@ -38,19 +39,19 @@ export function UserEdit(props) {
                 </div>
                 <div className="form-group">
                     <label labelfor="age">Age: </label>
-                    <input type="number" name="age" id="age" className="form-control" onChange={onInputChange} value={editedUser.age}/>
+                    <input type="number" name="age" id="age" className="form-control" onChange={onInputChange} value={editedUser.age} />
                 </div>
                 <div className="form-group">
                     <label labelfor="email">Email: </label>
-                    <input type="email" name="email" id="email" className="form-control" onChange={onInputChange} value={editedUser.email}/>
+                    <input type="email" name="email" id="email" className="form-control" onChange={onInputChange} value={editedUser.email} />
                 </div>
                 <div className="form-group">
                     <label labelfor="password">Password: </label>
-                    <input type="password" name="password" id="password" className="form-control" onChange={onInputChange} value={editedUser.password}/>
+                    <input type="password" name="password" id="password" className="form-control" onChange={onInputChange} value={editedUser.password} />
                 </div>
                 <div className="form-group">
                     <label labelfor="isActive">Is Active: </label>
-                    <input type="checkbox" name="isActive" id="isActive" className="form-control" onChange={onInputChange} cheked={editedUser.isActive}/>
+                    <input type="checkbox" name="isActive" id="isActive" className="form-control" onChange={onInputChange} cheked={editedUser.isActive} />
                 </div>
                 <div className="form-group">
                     <label labelfor="isAdmin">Is Admin: </label>
