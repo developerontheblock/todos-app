@@ -1,12 +1,13 @@
 # Notes App
 
+Why didn't I upload ***node_modules***. Click [here](https://i.redd.it/tfugj4n3l6ez.png) to find out.
 
 ## Start commands
 
 ```bash
 npm install
-npm start 
-npm run json-server
+npm start # starts project
+npm run json-server # starts server
 ```
 
 ## Requirements
