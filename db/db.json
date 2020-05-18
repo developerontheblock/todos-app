@@ -61,5 +61,14 @@
       "password": 12345
     }
   ],
-  "notes": []
+  "notes": [
+    {
+      "id": "5eb51e3d546530d90f97096d",
+      "title":"Test title",
+      "content":"content title",
+      "authorId":"1233a",
+      "authorName": "Alex Alex",
+      "date": "12-12-2020"
+    }
+  ]
 }
