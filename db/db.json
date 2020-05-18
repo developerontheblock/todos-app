@@ -15,7 +15,7 @@
       "isActive": false,
       "isAdmin": true,
       "picture": "https://picsum.photos/200/300?random=2.jpg",
-      "age": "23",
+      "age": "22",
       "name": "Maxine Alexander",
       "email": "maxinealexander@tingles.com",
       "password": 12345
@@ -36,7 +36,7 @@
       "isAdmin": false,
       "picture": "https://picsum.photos/200/300?random=4.jpg",
       "age": 34,
-      "name": "Ola Carr",
+      "name": "Ola Carry",
       "email": "olacarr@tingles.com",
       "password": 12345
     },
@@ -59,16 +59,6 @@
       "name": "Dollie Mccarthy",
       "email": "dolliemccarthy@tingles.com",
       "password": 12345
-    },
-    {
-      "name": "sasd",
-      "age": "22",
-      "email": "blemasdasd1964@teleworm.us",
-      "password": "Babati123",
-      "isActive": true,
-      "isAdmin": false,
-      "picture": "https://picsum.photos/200/300?random=1.jpg",
-      "id": "piH1b_f"
     }
   ],
   "notes": []
