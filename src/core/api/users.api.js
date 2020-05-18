@@ -47,3 +47,7 @@ export async function login(userData){
 export function logout(){
     localStorage.removeItem('loggedUser');
 }
+
+export function editUser(userData){
+    return axios.put(`${apiUrl}/users/${userData.id}`, userData);
+}
