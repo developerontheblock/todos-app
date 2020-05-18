@@ -1,17 +1,24 @@
 import React from 'react';
 
 const styles = {
-    backgroundColor: 'lightgray',
-    height: '30px',
+    position: 'absolute',
+    bottom: 0,
     width: '100%',
-    position: 'fixed',
-    bottom: 0
+    height: '60px',
+    lineHeight: '60px',
+    backgroundColor: '#f5f5f5'
 };
 
-export function Footer(){
-    return(
+
+export function Footer() {
+    return (
         <div className="footer" style={styles}>
-            Footer works
+            <div className="container">
+                <span className="text-muted">
+                    Faculty number: 1601681033
+                </span>
+            </div>
+
         </div>
 
     );

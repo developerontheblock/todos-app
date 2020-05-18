@@ -1,22 +1,25 @@
 import React from 'react';
 import './UserCard.css';
 import { Link } from 'react-router-dom';
-import { UserEdit } from '../user-edit/UserEdit';
 
-export function UserCard({user}) {
-    
-    return(
-        <div className="user-card">
-            <div className="picture-holder">
-                <span className="edit-icon"> <Link to={ `/users/edit/${user.id}` }>Edit</Link></span>
-                <img src={user.picture} alt= {user.name}/>
+const cardStyle = {
+    width: '15rem'
+}
+
+export function UserCard({ user }) {
+    return (
+        <div className="card m-2" style={cardStyle}>
+            <img src={user.picture} alt={user.name} />
+            <div className="card-body">
+                <h5 className="card-title"><Link to={`/users/${user.id}`}>{user.name}</Link></h5>
             </div>
-            <div className="info-holder">
-                <div className="name"><Link to={`/users/${user.id}`}>{user.name}</Link></div>
-                <div className="age">Age: {user.age}</div>
-                <div className="email">Email: {user.email}</div>
+            <ul className="list-group list-group-flush">
+                <li className="list-group-item">Age: {user.age}</li>
+                <li className="list-group-item">Email: {user.email}</li>
+            </ul>
+            <div className="card-body">
+                <Link to={`/users/edit/${user.id}`}>Edit</Link>
             </div>
         </div>
     );
-
 }
