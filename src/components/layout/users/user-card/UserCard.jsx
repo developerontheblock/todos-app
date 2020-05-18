@@ -1,12 +1,14 @@
 import React from 'react';
 import './UserCard.css';
 import { Link } from 'react-router-dom';
+import { UserEdit } from '../user-edit/UserEdit';
 
 export function UserCard({user}) {
     
     return(
         <div className="user-card">
             <div className="picture-holder">
+                <span className="edit-icon"> <Link to={ `/users/edit/${user.id}` }>Edit</Link></span>
                 <img src={user.picture} alt= {user.name}/>
             </div>
             <div className="info-holder">

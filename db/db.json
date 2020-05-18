@@ -79,6 +79,16 @@
       "isAdmin": false,
       "picture": "https://picsum.photos/200/300?random=1.jpg",
       "id": "YGUCy9g"
+    },
+    {
+      "name": "asd",
+      "email": "alex@abv.bg",
+      "password": "Babati123",
+      "age": "11",
+      "isActive": true,
+      "isAdmin": false,
+      "picture": "https://picsum.photos/200/300?random=1.jpg",
+      "id": "ZZ25i6P"
     }
   ],
   "notes": []

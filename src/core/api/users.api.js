@@ -15,6 +15,13 @@ export function getUserById(id) {
 }
 
 export async function register(userData){
+
+    const users = (await getAllUsers()).data;
+
+    if(users.find(u => u.email === userData.email)){
+        throw new Error('Email already exists');
+    }
+
     userData = {
         ...userData,
         isActive: true,

@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { getUserById } from '../../../../core/api/users.api';
 import { UserCard } from '../user-card/UserCard';
 
-export class User extends Component{
+export class User extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
 
         this.state = {
@@ -12,20 +12,20 @@ export class User extends Component{
         }
     }
 
-    componentDidMount(){
+    componentDidMount() {
         console.log(this.props);
         getUserById(this.props.match.params.id).then((response) => {
             this.setState(
                 {
                     user: response.data
-                });              
+                });
         });
     }
 
-    render(){
-        return(
+    render() {
+        return (
             <div className="single-user">
-              <UserCard user={this.state.user}></UserCard>
+                <UserCard user={this.state.user}></UserCard>
             </div>
         )
     }
