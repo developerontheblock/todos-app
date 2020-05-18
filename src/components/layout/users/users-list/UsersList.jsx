@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { getAllUsers, deleteUser } from '../../../../core/api/users.api';
+import { getAllUsers, deleteUser, getLoggedUser } from '../../../../core/api/users.api';
 import { UserCard } from '../user-card/UserCard';
+
+const currentUser = getLoggedUser();
 
 export function UsersList() {
 
@@ -8,14 +10,14 @@ export function UsersList() {
 
     useEffect(() => {
         getAllUsers().then((allUsers) => {
-            setUsers(allUsers.data)
+            setUsers(allUsers.data.filter(u => u.id !== currentUser.id));
         });
     }, []);
 
     const onUserDelete = (id) => {
         deleteUser(id).then(() => {
             setUsers((prevState) => {
-                return prevState.filter(u=> u.id !== id);
+                return prevState.filter(u => u.id !== id);
             })
         }).catch((err) =>
             console.log(err));
