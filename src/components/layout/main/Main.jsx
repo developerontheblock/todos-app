@@ -11,7 +11,7 @@ export function Main() {
         <div className="main-content">
             <Switch>
                 <AuthenticatedRoute exact path="/users" component={UsersList} />
-                <AuthenticatedRoute exact path="/users/edit/:id" component={UserEdit} />
+                <AuthenticatedRoute exact path="/users/edit/:id" admin={true} component={UserEdit} />
                 <AuthenticatedRoute exact path="/users/:id" component={User} />
             </Switch>
         </div>
