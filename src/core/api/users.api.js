@@ -36,6 +36,10 @@ export async function login(userData){
 
     const loggedUser = users.find(u=> u.email === userData.email && u.password.toString() === userData.password);
 
+    if(!loggedUser.isActive){
+        throw new Error('The current user has been blocked!')
+    }
+
     if(loggedUser){
         localStorage.setItem('loggedUser', JSON.stringify(loggedUser));
         return;
