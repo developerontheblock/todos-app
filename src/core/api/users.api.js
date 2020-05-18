@@ -51,3 +51,7 @@ export function logout(){
 export function editUser(userData){
     return axios.put(`${apiUrl}/users/${userData.id}`, userData);
 }
+
+export function deleteUser(id){
+    return axios.delete(`${apiUrl}/users/${id}`);
+}

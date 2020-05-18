@@ -62,16 +62,6 @@
     },
     {
       "name": "Alexandar Draev",
-      "email": "alex@abv.bg",
-      "password": "12345",
-      "age": "11",
-      "isActive": true,
-      "isAdmin": false,
-      "picture": "https://picsum.photos/200/300?random=1.jpg",
-      "id": "Myj2-XU"
-    },
-    {
-      "name": "Alexandar Draev",
       "email": "draev@gmail.com",
       "password": "123456",
       "age": "33",
@@ -79,27 +69,6 @@
       "isAdmin": false,
       "picture": "https://picsum.photos/200/300?random=1.jpg",
       "id": "YGUCy9g"
-    },
-    {
-      "name": "asd",
-      "email": "alex@abv.bg",
-      "password": "Babati123",
-      "age": "11",
-      "isActive": true,
-      "isAdmin": false,
-      "picture": "https://picsum.photos/200/300?random=1.jpg",
-      "id": "ZZ25i6P"
-    },
-    {
-      "name": "",
-      "email": "blem1964@teleworm.us",
-      "password": "Babati123",
-      "age": "",
-      "errorMessage": "",
-      "isActive": true,
-      "isAdmin": false,
-      "picture": "https://picsum.photos/200/300?random=1.jpg",
-      "id": "zl26LTT"
     }
   ],
   "notes": []
