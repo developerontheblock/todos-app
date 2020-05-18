@@ -1,17 +1,19 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import './UserEdit.css'
-import { getUserById, editUser } from '../../../../core/api/users.api';
+import { getUserById, saveUser } from '../../../../core/api/users.api';
 
 export function UserEdit(props) {
 
     const [editedUser, setEditedUser] = useState({ name: '', age: 0, email: '', password: '', isActive: false, isAdmin: false });
 
     useEffect(() => {
-        getUserById(props.computedMatch.params.id).then((currentUser) => {
-            setEditedUser(currentUser.data)
-        });
-    }, {});
+        if (props.computedMatch.params.id) {
+            getUserById(props.computedMatch.params.id).then((currentUser) => {
+                setEditedUser(currentUser.data)
+            });
+        }
+    }, [props.computedMatch.params.id]);
 
     const onInputChange = (event) => {
         event.persist();
@@ -24,8 +26,8 @@ export function UserEdit(props) {
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-        editUser(editedUser).then(() => {
-            console.log("asdasdasd");
+        saveUser(editedUser).then(() => {
+            console.log("Success");
         })
             .catch((err) => console.log(err))
     }
@@ -51,11 +53,11 @@ export function UserEdit(props) {
                 </div>
                 <div className="form-group">
                     <label labelfor="isActive">Is Active: </label>
-                    <input type="checkbox" name="isActive" id="isActive" className="form-control" onChange={onInputChange} cheked={editedUser.isActive} />
+                    <input type="checkbox" name="isActive" id="isActive" className="form-control" onChange={onInputChange} checked={editedUser.isActive} />
                 </div>
                 <div className="form-group">
                     <label labelfor="isAdmin">Is Admin: </label>
-                    <input type="checkbox" name="isAdmin" id="isAdmin" className="form-control" onChange={onInputChange} cheked={editedUser.isAdmin} />
+                    <input type="checkbox" name="isAdmin" id="isAdmin" className="form-control" onChange={onInputChange} checked={editedUser.isAdmin} />
                 </div>
                 <button className="btn btn-primary">Save user</button>
             </form>

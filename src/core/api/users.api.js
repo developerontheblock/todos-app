@@ -48,8 +48,13 @@ export function logout(){
     localStorage.removeItem('loggedUser');
 }
 
-export function editUser(userData){
-    return axios.put(`${apiUrl}/users/${userData.id}`, userData);
+export function saveUser(userData){
+    if(userData.id){
+        // edit user
+        return axios.put(`${apiUrl}/users/${userData.id}`, userData);
+    }
+    //create user
+    return register(userData);
 }
 
 export function deleteUser(id){
