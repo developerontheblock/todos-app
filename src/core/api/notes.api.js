@@ -7,6 +7,10 @@ export function getAllNotes() {
     return axios.get(`${apiUrl}/notes`);
 }
 
+export function getNoteById(id) {
+    return axios.get(`${apiUrl}/notes/${id}`);
+}
+
 export function saveNote(noteData) {
     const loggedUser = getLoggedUser();
 
@@ -19,5 +23,5 @@ export function saveNote(noteData) {
     noteData.date = new Date();
 
     return axios.post(`${apiUrl}/notes`, noteData);
-
 }
+

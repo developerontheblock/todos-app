@@ -1,12 +1,21 @@
 import React from 'react';
 import { useState } from 'react';
-import { saveNote } from '../../../core/api/notes.api';
+import { saveNote, getNoteById } from '../../../core/api/notes.api';
 import { Redirect } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export function NoteEdit(props) {
 
     const [currentNote, setCurrentNote] = useState({ title: '', content: '', authorId: '', authorName: '', data: '' });
     const [shouldRedirect, setShouldRedirect] = useState(false);
+
+    useEffect(() => {
+        if (props.computedMatch.params.id) {
+            getNoteById(props.computedMatch.params.id).then((result) => {
+                setCurrentNote(result.data);
+            });
+        }
+    }, [props.computedMatch.params.id])
 
     const onInputChange = (event) => {
         event.persist();

@@ -55,7 +55,7 @@ export class Register extends Component {
                         </div>
                         <div className="form-group">
                             <label labelfor="age">Age: </label>
-                            <input type="number" name="age" id="age" className="form-control" onChange={this.onInputChange} />
+                            <input type="number" name="age" id="age" min="10" max="100" className="form-control" onChange={this.onInputChange} />
                         </div>
                         <div className="form-group">
                             <label labelfor="email">Email: </label>
