@@ -13,7 +13,6 @@ export class User extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props);
         getUserById(this.props.match.params.id).then((response) => {
             this.setState(
                 {

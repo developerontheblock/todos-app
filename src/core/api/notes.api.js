@@ -11,6 +11,18 @@ export function getNoteById(id) {
     return axios.get(`${apiUrl}/notes/${id}`);
 }
 
+export async function getNoteByAuthorId(authorId) {
+    const allNotes = (await getAllNotes()).data;
+    return allNotes.filter(note => note.authorId === authorId);
+    
+}
+
+export function getMyNotes() {
+    const loggedUserId = getLoggedUser().id;
+    
+    return getNoteByAuthorId(loggedUserId);
+}
+
 export function saveNote(noteData) {
     const loggedUser = getLoggedUser();
 

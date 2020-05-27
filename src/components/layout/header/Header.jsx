@@ -38,6 +38,9 @@ export function Header() {
                                 <Link className="nav-link" to="/notes">Notes</Link>
                             </li>
                             <li className="nav-item">
+                                <Link className="nav-link" to="/notes/my-notes  ">My notes</Link>
+                            </li>
+                            <li className="nav-item">
                                 <Link className="nav-link" to="/notes/create">Create Note</Link>
                             </li>
                         </ul>

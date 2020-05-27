@@ -31,7 +31,7 @@ export function UserEdit(props) {
         saveUser(editedUser).then(() => {
             setShouldRedirect(true);
         })
-            .catch((err) => console.log(err))
+            .catch((err) => console.error(err))
     }
 
     return (
@@ -45,7 +45,7 @@ export function UserEdit(props) {
                     </div>
                     <div className="form-group">
                         <label labelfor="age">Age: </label>
-                        <input type="number" name="age" id="age" min="10" max="100" className="form-control" onChange={onInputChange} value={editedUser.age} />
+                        <input type="number" name="age" id="age" min="10" max="" className="form-control" onChange={onInputChange} value={editedUser.age} />
                     </div>
                     <div className="form-group">
                         <label labelfor="email">Email: </label>

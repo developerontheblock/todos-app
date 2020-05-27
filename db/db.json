@@ -12,12 +12,12 @@
     },
     {
       "id": "5eb51e3d941e142f584b5eea",
-      "isActive": false,
+      "isActive": true,
       "isAdmin": true,
       "picture": "https://picsum.photos/200/300?random=2.jpg",
       "age": "22",
       "name": "Maxine Alexander",
-      "email": "maxinealexander@tingles.com",
+      "email": "maxinealexander@tingles.coms",
       "password": 12345
     },
     {
@@ -59,17 +59,6 @@
       "name": "Dollie Mccarthy",
       "email": "dolliemccarthy@tingles.com",
       "password": 12345
-    },
-    {
-      "name": "asd",
-      "email": "blem1964@teleworm.us",
-      "password": "Babati123",
-      "age": "1",
-      "errorMessage": "",
-      "isActive": true,
-      "isAdmin": false,
-      "picture": "https://picsum.photos/200/300?random=1.jpg",
-      "id": "5KVS5RZ"
     }
   ],
   "notes": [
@@ -98,6 +87,24 @@
       "data": "",
       "date": "2020-05-19T08:17:04.442Z",
       "id": "tCVe_Au"
+    },
+    {
+      "title": "[ID Auth] - updateMe functionality updated/ Me functionality",
+      "content": "",
+      "authorId": "5eb51e3d941e142f584b5eea",
+      "authorName": "Maxine Alexander",
+      "data": "",
+      "date": "2020-05-19T09:20:03.555Z",
+      "id": "SGeWBeC"
+    },
+    {
+      "title": "aaa",
+      "content": "aaa",
+      "authorId": "5eb51e3d941e142f584b5eea",
+      "authorName": "Maxine Alexander",
+      "data": "",
+      "date": "2020-05-27T11:33:10.241Z",
+      "id": "GvLqRkq"
     }
   ]
 }
