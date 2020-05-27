@@ -14,7 +14,7 @@ export function getNoteById(id) {
 export async function getNoteByAuthorId(authorId) {
     const allNotes = (await getAllNotes()).data;
     return allNotes.filter(note => note.authorId === authorId);
-    
+
 }
 
 export function getMyNotes() {
@@ -37,3 +37,6 @@ export function saveNote(noteData) {
     return axios.post(`${apiUrl}/notes`, noteData);
 }
 
+export function deleteNote(id) {
+    return axios.delete(`${apiUrl}/notes/${id}`);
+}

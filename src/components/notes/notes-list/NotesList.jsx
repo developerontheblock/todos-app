@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { getAllNotes } from '../../../core/api/notes.api';
+import { getAllNotes, deleteNote } from '../../../core/api/notes.api';
 import { NoteCard } from '../note-card/NoteCard';
 
 export function NotesList() {
@@ -14,9 +14,17 @@ export function NotesList() {
         });
     }, []);
 
+    const onDelete = (id) => {
+        deleteNote(id).then(() => {
+            setNotes((prevState) =>{
+                return prevState.filter(notes => notes.id !== id);
+            })
+        })
+    };
+
     return (
         <div className="notes-list-wrapper">
-            {notes.map(note => <NoteCard note={note} key={note.id}/>)}
+            {notes.map(note => <NoteCard note={note} key={note.id} onDeleteClick={onDelete}/>)}
         </div>
     );
 }
