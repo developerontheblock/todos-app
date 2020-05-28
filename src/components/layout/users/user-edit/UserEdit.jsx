@@ -8,6 +8,7 @@ export function UserEdit(props) {
 
     const [editedUser, setEditedUser] = useState({ name: '', age: 0, email: '', password: '', isActive: false, isAdmin: false });
     const [shouldRedirect, setShouldRedirect] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
 
     useEffect(() => {
         if (props.computedMatch.params.id) {
@@ -40,7 +41,7 @@ export function UserEdit(props) {
         saveUser(editedUser).then(() => {
             setShouldRedirect(true);
         })
-            .catch((err) => console.error(err))
+            .catch((err) =>  setErrorMessage(err.message));
     };
 
     return (
@@ -48,6 +49,10 @@ export function UserEdit(props) {
             {shouldRedirect && <Redirect to="/users" />}
             <div className="user-edit-wrapper">
                 <form className="user-edit-form" onSubmit={onFormSubmit}>
+                {errorMessage &&
+                        <div className="alert alert-danger" role="alert">
+                            {errorMessage}
+                        </div>}
                     <div className="form-group">
                         <label labelfor="name">Name: </label>
                         <input type="text" name="name" id="name" className="form-control" onChange={onInputChange} value={editedUser.name} />

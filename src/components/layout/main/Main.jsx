@@ -13,10 +13,10 @@ export function Main() {
     return (
         <div className="main-content">
             <Switch>
-                <AuthenticatedRoute exact path="/users" component={UsersList} />
+            <AuthenticatedRoute exact path="/users" component={UsersList} />    
+                <AuthenticatedRoute exact path="/users/create" admin={true} component={UserEdit} />            
                 <AuthenticatedRoute exact path="/users/:id" component={User} />
-                <AuthenticatedRoute exact path="/users/create" admin={true} component={UserEdit} />
-                <AuthenticatedRoute exact path="/users/edit/:id" admin={true} component={UserEdit} />
+                <AuthenticatedRoute exact path="/users/edit/:id" admin={true} component={UserEdit} /> 
 
                 <AuthenticatedRoute exact path="/notes" component={NotesList} />
                 <AuthenticatedRoute exact path="/notes/my-notes" component={MyNotes} />

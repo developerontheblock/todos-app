@@ -6,7 +6,7 @@
       "isAdmin": true,
       "picture": "https://picsum.photos/200/300?random=2.jpg",
       "age": "22",
-      "name": "Maxine Alexander",
+      "name": "Maxine Alexandere",
       "email": "maxinealexander@tingles.coms",
       "password": 12345
     },
@@ -49,6 +49,16 @@
       "name": "Dollie Mccarthy",
       "email": "dolliemccarthy@tingles.com",
       "password": 12345
+    },
+    {
+      "name": "Alexandar Draev",
+      "age": "23",
+      "email": "alexanderdraev@abv.bg",
+      "password": "12345",
+      "isActive": true,
+      "isAdmin": false,
+      "picture": "https://picsum.photos/200/300?random=1.jpg",
+      "id": "PbVvp7n"
     }
   ],
   "notes": [
@@ -89,15 +99,6 @@
       "id": "KtaJ4dI"
     },
     {
-      "title": "aaaaaaaaaaa",
-      "content": "aaaaaaaaaa",
-      "authorId": "5eb51e3d941e142f584b5eea",
-      "authorName": "Maxine Alexander",
-      "data": "",
-      "date": "2020-05-28T13:06:03.080Z",
-      "id": "V8unekv"
-    },
-    {
       "title": "aaa",
       "content": "aaa",
       "authorId": "5eb51e3d941e142f584b5eea",
@@ -105,6 +106,15 @@
       "data": "",
       "date": "2020-05-28T13:08:00.678Z",
       "id": "jiiT8F_"
+    },
+    {
+      "title": "aaaa",
+      "content": "aaaaaaaaaaaa",
+      "authorId": "PbVvp7n",
+      "authorName": "Alexandar Draev",
+      "data": "",
+      "date": "2020-05-28T13:52:47.208Z",
+      "id": "o6I2f9R"
     }
   ]
 }
