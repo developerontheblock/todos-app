@@ -16,15 +16,13 @@ export function UserCard({ user, onDelete }) {
             <div className="card-body">
                 <h5 className="card-title"><Link to={`/users/${user.id}`}>{user.name}</Link></h5>
             </div>
-            <ul className="list-group list-group-flush">
+            <ul className="list-group list-groupS-flush">
                 <li className="list-group-item">Age: {user.age}</li>
                 <li className="list-group-item">Email: {user.email}</li>
             </ul>
             <div className="card-body">
                 {loggedUser.isAdmin && <Link className="cursor-pointer btn btn-outline-success mr-1" to={`/users/edit/${user.id}`}>Edit</Link>}
-                {loggedUser.isAdmin && <div className="cursor-pointer btn btn-outline-danger" onClick={() => onDelete(user.id)}>Delete</div>}
-
-            </div>
+                {loggedUser.isAdmin && <div className="cursor-pointer btn btn-outline-danger" onClick={() => onDelete(user.id)}>Delete</div>}            </div>
         </div>
     );
 }
