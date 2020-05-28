@@ -41,7 +41,7 @@ export function UserEdit(props) {
         saveUser(editedUser).then(() => {
             setShouldRedirect(true);
         })
-            .catch((err) =>  setErrorMessage(err.message));
+            .catch((err) => setErrorMessage(err.message));
     };
 
     return (
@@ -49,7 +49,7 @@ export function UserEdit(props) {
             {shouldRedirect && <Redirect to="/users" />}
             <div className="user-edit-wrapper">
                 <form className="user-edit-form" onSubmit={onFormSubmit}>
-                {errorMessage &&
+                    {errorMessage &&
                         <div className="alert alert-danger" role="alert">
                             {errorMessage}
                         </div>}
