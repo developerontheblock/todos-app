@@ -1,4 +1,5 @@
 import axios from  'axios';
+import { deleteNoteForAuthor } from './notes.api';
 
 const apiUrl = 'http://localhost:3005';
 
@@ -62,5 +63,6 @@ export function saveUser(userData){
 }
 
 export function deleteUser(id){
+    deleteNoteForAuthor(id);
     return axios.delete(`${apiUrl}/users/${id}`);
 }

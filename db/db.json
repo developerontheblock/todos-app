@@ -1,16 +1,6 @@
 {
   "users": [
     {
-      "id": "5eb51e3dc86c9bd106815aba",
-      "isActive": true,
-      "isAdmin": false,
-      "picture": "https://picsum.photos/200/300?random=1.jpg",
-      "age": 20,
-      "name": "Gordon Holcomb",
-      "email": "gordonholcomb@tingles.com",
-      "password": 12345
-    },
-    {
       "id": "5eb51e3d941e142f584b5eea",
       "isActive": true,
       "isAdmin": true,
@@ -79,15 +69,6 @@
       "data": "",
       "date": "2020-05-27T11:54:34.484Z",
       "id": "K1w3uWc"
-    },
-    {
-      "title": "тест",
-      "content": "тест",
-      "authorId": "5eb51e3dc86c9bd106815aba",
-      "authorName": "Gordon Holcomb",
-      "data": "",
-      "date": "2020-05-28T11:57:10.097Z",
-      "id": "8m5SAHy"
     }
   ]
 }

@@ -19,7 +19,7 @@ export async function getNoteByAuthorId(authorId) {
 
 export function getMyNotes() {
     const loggedUserId = getLoggedUser().id;
-    
+
     return getNoteByAuthorId(loggedUserId);
 }
 
@@ -39,4 +39,12 @@ export function saveNote(noteData) {
 
 export function deleteNote(id) {
     return axios.delete(`${apiUrl}/notes/${id}`);
+}
+
+export async function deleteNoteForAuthor(authorId) {
+    const notes = await getNoteByAuthorId(authorId);
+
+    notes.forEach(note => {
+        deleteNote(note.id);
+    });
 }
