@@ -16,20 +16,12 @@ export function NoteCard({ note, onDeleteClick }) {
 
     const loggedUser = getLoggedUser();
     return (
-        <div className="card border-primary mb-2 ml-4 mt-2" style={noteCardStyle}>
-
-            <div className="card-body text-primary">
-                <h5 class="card-title">{note.title}</h5>
+        <div class="card border-info mb-3 mb-2 ml-4 mt-2" style={noteCardStyle}>
+            <div class="card-header bg-transparent border-info text-info"> <h5 class="card-title">{note.title}</h5></div>
+            <div class="card-body ">
+                <p class="card-text">{note.content}</p>
             </div>
-            <div className="card-header">
-                {(loggedUser.isAdmin || loggedUser.id === note.authorId) && <Link className="cursor-pointer btn btn-success mr-1 mt-1" to={`/notes/edit/${note.id}`}>Edit </Link>}
-                {(loggedUser.isAdmin || loggedUser.id === note.authorId) && <span className="cursor-pointer btn btn-danger mt-1" style={deleteBtnStyles} onClick={() => onDeleteClick(note.id)}>Delete</span>}
-            </div>
-
-            <div className="card-body ">
-                <p className="card-text">{note.content}</p>
-            </div>
-            <div className="card-footer bg-transparent border-secondary">
+            <div className="card-footer bg-transparent border-info">
                 <div>
                     Author: {note.authorName}
                 </div>
@@ -37,7 +29,10 @@ export function NoteCard({ note, onDeleteClick }) {
                     Created on: {note.date}
                 </div>
             </div>
-
+            <div class="card-footer bg-transparent border-info">
+                {(loggedUser.isAdmin || loggedUser.id === note.authorId) && <Link className="cursor-pointer btn btn-success mr-1 " to={`/notes/edit/${note.id}`}>Edit </Link>}
+                {(loggedUser.isAdmin || loggedUser.id === note.authorId) && <span className="cursor-pointer btn btn-danger " style={deleteBtnStyles} onClick={() => onDeleteClick(note.id)}>Delete</span>}
+            </div>
         </div>
     );
 }
