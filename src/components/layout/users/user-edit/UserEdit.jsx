@@ -24,7 +24,16 @@ export function UserEdit(props) {
             ...prevState,
             [event.target.name]: event.target.value
         }));
-    }
+    };
+
+    const onCheckBoxChange = (event) => {
+        event.persist();
+
+        setEditedUser((prevState) => ({
+            ...prevState,
+            [event.target.name]: event.target.checked
+        }));
+    };
 
     const onFormSubmit = (event) => {
         event.preventDefault();
@@ -32,11 +41,11 @@ export function UserEdit(props) {
             setShouldRedirect(true);
         })
             .catch((err) => console.error(err))
-    }
+    };
 
     return (
         <>
-            {shouldRedirect && <Redirect to="/users"/>}
+            {shouldRedirect && <Redirect to="/users" />}
             <div className="user-edit-wrapper">
                 <form className="user-edit-form" onSubmit={onFormSubmit}>
                     <div className="form-group">
@@ -57,11 +66,11 @@ export function UserEdit(props) {
                     </div>
                     <div className="form-group">
                         <label labelfor="isActive">Is Active: </label>
-                        <input type="checkbox" name="isActive" id="isActive" className="form-control" onChange={onInputChange} checked={editedUser.isActive} />
+                        <input type="checkbox" name="isActive" id="isActive" className="form-control" onChange={onCheckBoxChange} checked={editedUser.isActive} />
                     </div>
                     <div className="form-group">
                         <label labelfor="isAdmin">Is Admin: </label>
-                        <input type="checkbox" name="isAdmin" id="isAdmin" className="form-control" onChange={onInputChange} checked={editedUser.isAdmin} />
+                        <input type="checkbox" name="isAdmin" id="isAdmin" className="form-control" onChange={onCheckBoxChange} checked={editedUser.isAdmin} />
                     </div>
                     <button className="btn btn-primary">Save user</button>
                 </form>

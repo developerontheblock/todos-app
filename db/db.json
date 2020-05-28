@@ -12,8 +12,8 @@
     },
     {
       "id": "5eb51e3d546530d90f97096d",
-      "isActive": "on",
-      "isAdmin": "on",
+      "isActive": true,
+      "isAdmin": false,
       "picture": "https://picsum.photos/200/300?random=3.jpg",
       "age": 28,
       "name": "Krista Rodgers",
