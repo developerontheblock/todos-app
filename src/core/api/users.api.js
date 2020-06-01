@@ -1,25 +1,32 @@
-import axios from  'axios';
+import axios from 'axios';
 import { deleteNoteForAuthor } from './notes.api';
 
 const apiUrl = 'http://localhost:3005';
 
-export function getLoggedUser(){
+export function getLoggedUser() {
     return JSON.parse(localStorage.getItem('loggedUser'));
 }
 
-export function getAllUsers() {
-    return axios.get(`${apiUrl}/users`);
+export async function getAllUsers(params) {
+
+    const allUsers = (await axios.get(`${apiUrl}/users`)).data;
+    if (!params) {
+        return allUsers;
+    }
+    const lowerParam = params.toLowerCase();
+    return allUsers.filter(user => user.name.toLowerCase().includes(lowerParam) || user.email.toLowerCase().includes(lowerParam));
+
 }
 
 export function getUserById(id) {
     return axios.get(`${apiUrl}/users/${id}`);
 }
 
-export async function register(userData){
+export async function register(userData) {
 
-    const users = (await getAllUsers()).data;
+    const users = await getAllUsers();
 
-    if(users.find(u => u.email === userData.email)){
+    if (users.find(u => u.email === userData.email)) {
         throw new Error('Email already exists');
     }
 
@@ -32,16 +39,16 @@ export async function register(userData){
     return axios.post(`${apiUrl}/users`, userData);
 }
 
-export async function login(userData){
-    const users = (await getAllUsers()).data;
+export async function login(userData) {
+    const users = await getAllUsers();
 
-    const loggedUser = users.find(u=> u.email === userData.email && u.password.toString() === userData.password);
+    const loggedUser = users.find(u => u.email === userData.email && u.password.toString() === userData.password);
 
-    if(!loggedUser.isActive){
+    if (!loggedUser.isActive) {
         throw new Error('The current user has been blocked!')
     }
 
-    if(loggedUser){
+    if (loggedUser) {
         localStorage.setItem('loggedUser', JSON.stringify(loggedUser));
         return;
     }
@@ -49,12 +56,12 @@ export async function login(userData){
     throw new Error('Incorrect username or password');
 }
 
-export function logout(){
+export function logout() {
     localStorage.removeItem('loggedUser');
 }
 
-export function saveUser(userData){
-    if(userData.id){
+export function saveUser(userData) {
+    if (userData.id) {
         // edit user
         return axios.put(`${apiUrl}/users/${userData.id}`, userData);
     }
@@ -62,7 +69,7 @@ export function saveUser(userData){
     return register(userData);
 }
 
-export function deleteUser(id){
+export function deleteUser(id) {
     deleteNoteForAuthor(id);
     return axios.delete(`${apiUrl}/users/${id}`);
 }

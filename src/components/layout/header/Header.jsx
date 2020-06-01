@@ -4,7 +4,6 @@ import { logout } from '../../../core/api/users.api';
 
 export const Header = withRouter((props) => {
 
-    console.log(props);
     const [isLoggedOut, setLogOutFlag] = useState(false);
     const [searchParam, setSearchParam] = useState('');
 
