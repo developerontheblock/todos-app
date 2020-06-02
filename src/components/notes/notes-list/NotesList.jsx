@@ -4,6 +4,11 @@ import { useEffect } from 'react';
 import { getAllNotes, deleteNote } from '../../../core/api/notes.api';
 import { NoteCard } from '../note-card/NoteCard';
 
+const notesListStyle = {
+    margin: '5px',
+    flexWrap: 'wrap'
+}
+
 export function NotesList(props) {
 
     const [notes, setNotes] = useState([]);
@@ -24,7 +29,7 @@ export function NotesList(props) {
     };
 
     return (
-        <div className="notes-list-wrapper">
+        <div className="notes-list-wrapper d-flex" style={notesListStyle} >
             {notes.map(note => <NoteCard note={note} key={note.id} onDeleteClick={onDelete}/>)}
         </div>
     );

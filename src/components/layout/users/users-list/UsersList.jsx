@@ -4,6 +4,9 @@ import { UserCard } from '../user-card/UserCard';
 
 const currentUser = getLoggedUser();
 
+const usersListStyle = {
+    flexWrap: 'wrap'
+}
 export function UsersList(props) {
 
     const [users, setUsers] = useState([]);
@@ -27,7 +30,7 @@ export function UsersList(props) {
     }
 
     return (
-        <div className="users-list d-flex">
+        <div className="users-list d-flex" style={usersListStyle}>
             {users.map((user) => <UserCard user={user} key={user.id} onDelete={onUserDelete} />)}
         </div>
     );
