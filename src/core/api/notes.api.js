@@ -3,8 +3,16 @@ import { getLoggedUser } from './users.api';
 
 const apiUrl = 'http://localhost:3005'
 
-export function getAllNotes() {
-    return axios.get(`${apiUrl}/notes`);
+export async function getAllNotes(searchParam) {
+
+    const allNotes = (await axios.get(`${apiUrl}/notes`)).data;
+
+    if(!searchParam) {
+        return allNotes;
+    }
+
+    const lowerParam = searchParam.toLowerCase();
+    return allNotes.filter(note => note.title.toLowerCase().includes(lowerParam) || note.content.toLowerCase().includes(lowerParam));
 }
 
 export function getNoteById(id) {
@@ -12,7 +20,7 @@ export function getNoteById(id) {
 }
 
 export async function getNoteByAuthorId(authorId) {
-    const allNotes = (await getAllNotes()).data;
+    const allNotes = await getAllNotes();
     return allNotes.filter(note => note.authorId === authorId);
 
 }

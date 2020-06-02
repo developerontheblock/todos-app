@@ -4,15 +4,16 @@ import { useEffect } from 'react';
 import { getAllNotes, deleteNote } from '../../../core/api/notes.api';
 import { NoteCard } from '../note-card/NoteCard';
 
-export function NotesList() {
+export function NotesList(props) {
 
     const [notes, setNotes] = useState([]);
 
     useEffect(() => {
-        getAllNotes().then((result) => {
-            setNotes(result.data);
+        const searchParam = props.location.search.split('=')[1];
+        getAllNotes(searchParam).then((result) => {
+            setNotes(result);
         });
-    }, []);
+    }, [props.location.search]);
 
     const onDelete = (id) => {
         deleteNote(id).then(() => {
