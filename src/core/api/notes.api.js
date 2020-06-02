@@ -7,6 +7,12 @@ export const NotesStatus = {
     Done: 'Done'
 };
 
+export const NotesPriority = {
+    Low: 'Low',
+    Medium: 'Medium',
+    High: 'High'
+};
+
 const apiUrl = 'http://localhost:3005'
 
 export async function getAllNotes(searchParam) {
@@ -50,6 +56,10 @@ export function saveNote(noteData) {
 
     if (!noteData.status) {
         noteData.status = NotesStatus.Active;
+    }
+
+    if (!noteData.priority) {
+        noteData.priority = NotesPriority.Low;
     }
 
     return axios.post(`${apiUrl}/notes`, noteData);

@@ -57,6 +57,14 @@ export function NoteEdit(props) {
                             <option value="Done">Done</option>
                         </select>
                     </div>
+                    <div className="form-group">
+                        <label htmlFor="priority">Priority: </label>
+                        <select name="priority" id="priority" className="form-control" onChange={onInputChange} value={currentNote.priority}>
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                    </div>
                     <button className="btn btn-primary">Save Note</button>
                 </form>
             </div>
