@@ -1,6 +1,12 @@
 import axios from 'axios';
 import { getLoggedUser } from './users.api';
 
+export const NotesStatus = {
+    Active: 'Active',
+    Pending: 'Pending',
+    Done: 'Done'
+};
+
 const apiUrl = 'http://localhost:3005'
 
 export async function getAllNotes(searchParam) {
@@ -41,6 +47,7 @@ export function saveNote(noteData) {
     noteData.authorId = loggedUser.id;
     noteData.authorName = loggedUser.name;
     noteData.date = new Date();
+    noteData.status = NotesStatus.Active;
 
     return axios.post(`${apiUrl}/notes`, noteData);
 }
