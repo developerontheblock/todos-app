@@ -19,7 +19,7 @@ export const Header = withRouter((props) => {
 
     const onSearchClick = (event) => {
         event.preventDefault();
-        const pathNameUrl = props.location.pathname.split('/')[1];
+        const pathNameUrl = props.location.pathname.substr(1);
 
         const historyObj = { pathname: `/${pathNameUrl}` };
         if (searchParam) {

@@ -7,7 +7,7 @@ export async function getAllNotes(searchParam) {
 
     const allNotes = (await axios.get(`${apiUrl}/notes`)).data;
 
-    if(!searchParam) {
+    if (!searchParam) {
         return allNotes;
     }
 
@@ -19,16 +19,16 @@ export function getNoteById(id) {
     return axios.get(`${apiUrl}/notes/${id}`);
 }
 
-export async function getNoteByAuthorId(authorId) {
-    const allNotes = await getAllNotes();
+export async function getNoteByAuthorId(authorId, searchParam) {
+    const allNotes = await getAllNotes(searchParam);
     return allNotes.filter(note => note.authorId === authorId);
 
 }
 
-export function getMyNotes() {
+export function getMyNotes(searchParam) {
     const loggedUserId = getLoggedUser().id;
 
-    return getNoteByAuthorId(loggedUserId);
+    return getNoteByAuthorId(loggedUserId, searchParam);
 }
 
 export function saveNote(noteData) {
