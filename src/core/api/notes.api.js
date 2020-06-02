@@ -47,7 +47,10 @@ export function saveNote(noteData) {
     noteData.authorId = loggedUser.id;
     noteData.authorName = loggedUser.name;
     noteData.date = new Date();
-    noteData.status = NotesStatus.Active;
+
+    if (!noteData.status) {
+        noteData.status = NotesStatus.Active;
+    }
 
     return axios.post(`${apiUrl}/notes`, noteData);
 }
