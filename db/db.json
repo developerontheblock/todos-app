@@ -41,16 +41,6 @@
       "password": 12345
     },
     {
-      "id": "5eb51e3d5bf5a79d8d47dc75",
-      "isActive": true,
-      "isAdmin": false,
-      "picture": "https://picsum.photos/200/300?random=6.jpg",
-      "age": 30,
-      "name": "Dollie Mccarthy",
-      "email": "dolliemccarthy@tingles.com",
-      "password": 12345
-    },
-    {
       "name": "Alexandar Draev",
       "age": "23",
       "email": "alexanderdraev@abv.bg",
@@ -118,17 +108,6 @@
       "priority": "Low"
     },
     {
-      "title": "123",
-      "content": "123",
-      "authorId": "PbVvp7n",
-      "authorName": "Alexandar Draev",
-      "data": "",
-      "date": "2020-05-28T14:36:18.797Z",
-      "id": "UQZFMe1",
-      "status": "Active",
-      "priority": "Low"
-    },
-    {
       "title": "My first note",
       "content": "test 1",
       "authorId": "5eb51e3d941e142f584b5eea",
@@ -138,116 +117,6 @@
       "id": "EUs5qBM",
       "status": "Active",
       "priority": "Low"
-    },
-    {
-      "title": "12333",
-      "content": "3321",
-      "authorId": "PbVvp7n",
-      "authorName": "Alexandar Draev",
-      "data": "",
-      "status": "Pending",
-      "date": "2020-06-02T19:01:43.601Z",
-      "id": "3pszunT",
-      "priority": "Low"
-    },
-    {
-      "title": "asdasd",
-      "content": "asdasd",
-      "authorId": "PbVvp7n",
-      "authorName": "Alexandar Draev",
-      "data": "",
-      "date": "2020-06-02T19:04:23.738Z",
-      "status": "Active",
-      "id": "g0jQv2H",
-      "priority": "Low"
-    },
-    {
-      "title": "11",
-      "content": "11",
-      "authorId": "PbVvp7n",
-      "authorName": "Alexandar Draev",
-      "data": "",
-      "status": "Active",
-      "date": "2020-06-02T19:10:52.486Z",
-      "id": "DJmvIJS",
-      "priority": "Low"
-    },
-    {
-      "title": "22",
-      "content": "22",
-      "authorId": "PbVvp7n",
-      "authorName": "Alexandar Draev",
-      "data": "",
-      "status": "Active",
-      "date": "2020-06-02T19:10:57.327Z",
-      "id": "ly2k4aP",
-      "priority": "Low"
-    },
-    {
-      "title": "asdasdddddddddddddddddddddddddddddddddddddddddddddddd",
-      "content": "asd",
-      "authorId": "PbVvp7n",
-      "authorName": "Alexandar Draev",
-      "data": "",
-      "status": "Active",
-      "date": "2020-06-02T19:12:38.007Z",
-      "id": "1k5WDdx",
-      "priority": "Low"
-    },
-    {
-      "title": "abc",
-      "content": "asd",
-      "authorId": "PbVvp7n",
-      "authorName": "Alexandar Draev",
-      "data": "",
-      "status": "Active",
-      "date": "2020-06-02T19:13:42.085Z",
-      "id": "ZukHqK1",
-      "priority": "Low"
-    },
-    {
-      "title": "ee",
-      "content": "ee",
-      "authorId": "PbVvp7n",
-      "authorName": "Alexandar Draev",
-      "data": "",
-      "status": "Done",
-      "date": "2020-06-02T19:19:03.920Z",
-      "id": "tJyPSBW",
-      "priority": "Low"
-    },
-    {
-      "title": "a",
-      "content": "a",
-      "authorId": "PbVvp7n",
-      "authorName": "Alexandar Draev",
-      "data": "",
-      "date": "2020-06-02T19:20:05.837Z",
-      "status": "Active",
-      "id": "TB-pDLA",
-      "priority": "Low"
-    },
-    {
-      "title": "qwe",
-      "content": "qwe",
-      "authorId": "PbVvp7n",
-      "authorName": "Alexandar Draev",
-      "data": "",
-      "status": "Pending",
-      "date": "2020-06-02T19:34:17.527Z",
-      "id": "HjsdGAP",
-      "priority": "Low"
-    },
-    {
-      "title": "aaa",
-      "content": "aaa",
-      "authorId": "PbVvp7n",
-      "authorName": "Alexandar Draev",
-      "data": "",
-      "priority": "Medium",
-      "date": "2020-06-02T20:31:18.821Z",
-      "status": "Active",
-      "id": "3aNzvzJ"
     },
     {
       "title": "ss",
@@ -270,6 +139,17 @@
       "status": "Done",
       "date": "2020-06-02T20:41:50.387Z",
       "id": "uqfiH06"
+    },
+    {
+      "title": "w",
+      "content": "s",
+      "authorId": "PbVvp7n",
+      "authorName": "Alexandar Draev",
+      "data": "",
+      "status": "Pending",
+      "priority": "Medium",
+      "date": "2020-06-02T20:43:33.386Z",
+      "id": "rfhOctK"
     }
   ]
 }
