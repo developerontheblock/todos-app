@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { getUserById } from '../../../../core/api/users.api';
-import { getNoteByAuthorId, deleteNote } from '../../../../core/api/notes.api';
+import { getTodoByAuthorId, deleteTodo } from '../../../../core/api/todos.api';
 import { UserCard } from '../user-card/UserCard';
-import { NoteCard } from '../../../notes/note-card/NoteCard';
+import { TodoCard } from '../../../todos/todo-card/TodoCard';
 
 export class User extends Component {
 
@@ -11,7 +11,7 @@ export class User extends Component {
 
         this.state = {
             user: {},
-            notes: []
+            todos: []
         }
     }
 
@@ -24,19 +24,19 @@ export class User extends Component {
             });
         });
 
-        getNoteByAuthorId(authorId).then((userNotes) => {
+        getTodoByAuthorId(authorId).then((usertodos) => {
             this.setState({
-                notes: userNotes
+                todos: usertodos
             });
         });
     }
 
     onDelete = (id) => {
-        deleteNote(id).then(() => {
-            const allNotes = this.state.notes;
-            const newNotes = allNotes.filter(note => note.id !== id);
+        deleteTodo(id).then(() => {
+            const alltodos = this.state.todos;
+            const newtodos = alltodos.filter(todo => todo.id !== id);
             this.setState({
-                notes: newNotes
+                todos: newtodos
             });
         })
     };
@@ -45,7 +45,7 @@ export class User extends Component {
         return (
             <div className="single-user">
                 <UserCard user={this.state.user} />
-                {this.state.notes.map(note => < NoteCard note={note} key={note.id} onDeleteClick={this.onDelete} />)}
+                {this.state.todos.map(todo => < TodoCard todo={todo} key={todo.id} onDeleteClick={this.onDelete} />)}
             </div>
         )
     }

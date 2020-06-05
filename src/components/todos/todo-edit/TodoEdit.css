@@ -1,4 +1,4 @@
-.note-edit-wrapper {
+.Todo-edit-wrapper {
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -6,7 +6,7 @@
     background-color: #ffcb74;
 }
 
-.note-edit-form {
+.Todo-edit-form {
     border-radius: 25px;
     border: 1px solid #ffcb74;
     width: 600px;

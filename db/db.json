@@ -60,9 +60,19 @@
       "isAdmin": false,
       "picture": "https://picsum.photos/200/300?random=1.jpg",
       "id": "NxqGu2p"
+    },
+    {
+      "name": "asd",
+      "age": "12",
+      "email": "test@test.bg",
+      "password": "12345",
+      "isActive": true,
+      "isAdmin": false,
+      "picture": "https://picsum.photos/200/300?random=1.jpg",
+      "id": "pL8OHOb"
     }
   ],
-  "notes": [
+  "todos": [
     {
       "title": "[ID Auth] - updateMe functionalit",
       "content": "aaa",
@@ -117,6 +127,39 @@
       "date": "2020-06-05T09:02:05.938Z",
       "priority": "Low",
       "id": "Vkws6ZQ"
+    },
+    {
+      "title": "a",
+      "content": "asd",
+      "authorId": "5eb51e3d941e142f584b5eea",
+      "authorName": "Maxine Alexandere",
+      "data": "",
+      "priority": "Medium",
+      "date": "2020-06-05T10:15:09.847Z",
+      "status": "Active",
+      "id": "6m333A8"
+    },
+    {
+      "title": "a",
+      "content": "a",
+      "authorId": "5eb51e3d941e142f584b5eea",
+      "authorName": "Maxine Alexandere",
+      "data": "",
+      "priority": "High",
+      "date": "2020-06-05T10:18:00.022Z",
+      "status": "Active",
+      "id": "YTlJ7bU"
+    },
+    {
+      "title": "1234",
+      "content": "1234",
+      "authorId": "pL8OHOb",
+      "authorName": "asd",
+      "data": "",
+      "status": "Active",
+      "priority": "Low",
+      "date": "2020-06-05T10:31:02.894Z",
+      "id": "B8XZeEt"
     }
   ]
 }

@@ -8,7 +8,7 @@ export function Home() {
             <div class="container">
                 <div class="row">
                     <div class="col-xl-9 mx-auto">
-                        <h1 class="mt-5">University React Js Project</h1>
+                        <h1 class="mt-5">University React Js Jira Project</h1>
                     </div>
                 </div>
             </div>

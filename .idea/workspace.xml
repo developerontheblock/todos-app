@@ -2,10 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89e06ce7-90c8-48cd-8dd8-79b19d2bd669" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../src/components/auth/login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/components/auth/login/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../src/components/auth/register/Register.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/components/auth/register/Register.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../src/components/auth/register/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/components/auth/register/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/main/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/users/user/User.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/users/user/User.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/users/users-list/UsersList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/users/users-list/UsersList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todos/my-notodostes/MyTodos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todos/my-todos/MyTodos.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todos/todos-card/MyTodos.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todos/todos-edit/MyTodos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todos/todos-edit/MyTodos.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todos/todos-list/MyTodos.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/api/todos.api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/api/users.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/api/users.api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,10 +29,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ba0xL73t3WajuNI3nZsGraWEGK" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -41,7 +57,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../../src" />
+      <recent name="$USER_HOME$/src" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -57,6 +73,7 @@
       <workItem from="1588855143535" duration="1030000" />
       <workItem from="1588856418647" duration="16737000" />
       <workItem from="1589273134884" duration="663000" />
+      <workItem from="1591350389581" duration="634000" />
     </task>
     <task id="LOCAL-00001" summary="setup React app, updated README">
       <created>1588855581597</created>

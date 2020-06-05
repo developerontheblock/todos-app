@@ -10,7 +10,7 @@ const styles = {
 
 export function Footer() {
     return (
-        <div className="footer" style={styles}>
+        <div className="footer bg-light" style={styles}>
             Footer 
         </div>
     );

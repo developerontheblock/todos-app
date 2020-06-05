@@ -53,13 +53,13 @@ export const Header = withRouter((props) => {
                                 <Link className="nav-link" to="/users/create">Create User</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/notes">Notes</Link>
+                                <Link className="nav-link" to="/todos">Todos</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/notes/my-notes">My notes</Link>
+                                <Link className="nav-link" to="/todos/my-todos">My Todos</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/notes/create">Create Note</Link>
+                                <Link className="nav-link" to="/todos/create">Create Todo</Link>
                             </li>
                         </ul>
                         <form className="form-inline my-2 my-lg-0" onSubmit={onSearchClick}>
