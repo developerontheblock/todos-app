@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { saveNote, getNoteById } from '../../../core/api/notes.api';
 import { Redirect } from 'react-router-dom';
+import './NoteEdit.css'
 import { useEffect } from 'react';
 
 export function NoteEdit(props) {
@@ -40,7 +41,7 @@ export function NoteEdit(props) {
         <>
             {shouldRedirect && <Redirect to="/notes" />}
             <div className="note-edit-wrapper">
-                <form onSubmit={onNoteSave}>
+                <form className=" note-edit-form" onSubmit={onNoteSave}>
                     <div className="form-group">
                         <label labelfor="title">Title: </label>
                         <input className="form-control" type="text" id="title" name="title" onChange={onInputChange} value={currentNote.title} />

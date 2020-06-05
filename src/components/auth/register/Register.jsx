@@ -50,20 +50,20 @@ export class Register extends Component {
                                 {this.state.errorMessage}
                             </div>}
                         <div className="form-group">
-                            <label labelfor="name">Name: </label>
-                            <input type="text" name="name" id="name" className="form-control" onChange={this.onInputChange} />
+                            <label labelfor="name">Name </label>
+                            <input type="text" name="name" id="name" className="form-control" placeholder="Please, enter your name..." onChange={this.onInputChange} />
                         </div>
                         <div className="form-group">
-                            <label labelfor="age">Age: </label>
-                            <input type="number" name="age" id="age" min="10" max="100" className="form-control" onChange={this.onInputChange} />
+                            <label labelfor="age">Age </label>
+                            <input type="number" name="age" id="age" min="10" max="100" className="form-control" placeholder="Please, enter your age..." onChange={this.onInputChange} />
                         </div>
                         <div className="form-group">
-                            <label labelfor="email">Email: </label>
-                            <input type="email" name="email" id="email" className="form-control" onChange={this.onInputChange} />
+                            <label labelfor="email">Email </label>
+                            <input type="email" name="email" id="email" className="form-control" placeholder="Please, enter your email..." onChange={this.onInputChange} />
                         </div>
                         <div className="form-group">
-                            <label labelfor="password">Password: </label>
-                            <input type="password" name="password" id="napasswordme" className="form-control" onChange={this.onInputChange} />
+                            <label labelfor="password">Password </label>
+                            <input type="password" name="password" id="napasswordme" className="form-control" placeholder="Please, enter your password..." onChange={this.onInputChange} />
                         </div>
                         <button className="btn btn-primary">Register</button>
                         <Link to="/login" className="mt-2">Already have an account?</Link>

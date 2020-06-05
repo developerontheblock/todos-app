@@ -1,0 +1,15 @@
+.note-edit-wrapper {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffcb74;
+}
+
+.note-edit-form {
+    border-radius: 25px;
+    border: 1px solid #ffcb74;
+    width: 600px;
+    padding: 40px;
+    background-color: #80bdab
+}

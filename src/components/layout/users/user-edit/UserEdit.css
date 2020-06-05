@@ -1,14 +1,16 @@
-.user-edit-wrapper {
-    display: flex;
-    height: calc(100vh - 200px);
-    justify-content: center;
-    align-items: center;
-}
-
-.user-edit-form{
-    border: 1px solid black;
-    width: 600px;
-    padding: 20px;
-    background-color: rgb(218, 244, 253);
-
-}
+    .user-edit-wrapper {
+        display: flex;
+        height: 100vh;
+        /* height: calc(100vh - 200px); */
+        justify-content: center;
+        align-items: center;
+        background-color: #ffcb74;
+    }
+    
+    .user-edit-form {
+        border-radius: 25px;
+        border: 1px solid #ffcb74;
+        width: 600px;
+        padding: 20px;
+        background-color: #80bdab;
+    }

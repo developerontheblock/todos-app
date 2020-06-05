@@ -16,6 +16,8 @@ export function Main() {
         <div className="main-content">
             <Switch>
                 <AuthenticatedRoute exact path="/home" component={Home} />
+                <AuthenticatedRoute exact path="/" component={Home} />
+
 
                 <AuthenticatedRoute exact path="/users" component={UsersList} />
                 <AuthenticatedRoute exact path="/users/create" admin={true} component={UserEdit} />

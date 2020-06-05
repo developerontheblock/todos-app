@@ -49,6 +49,17 @@
       "isAdmin": false,
       "picture": "https://picsum.photos/200/300?random=1.jpg",
       "id": "PbVvp7n"
+    },
+    {
+      "name": "Alexandar Draev",
+      "email": "blem1964@teleworm.usasd",
+      "password": "12345",
+      "age": "15",
+      "errorMessage": "",
+      "isActive": true,
+      "isAdmin": false,
+      "picture": "https://picsum.photos/200/300?random=1.jpg",
+      "id": "NxqGu2p"
     }
   ],
   "notes": [
@@ -64,28 +75,6 @@
       "priority": "Low"
     },
     {
-      "title": "ааааdefault login form validations",
-      "content": "llmasdasdasdasdasd",
-      "authorId": "5eb51e3d941e142f584b5eea",
-      "authorName": "Maxine Alexander",
-      "data": "",
-      "date": "2020-05-27T11:54:34.484Z",
-      "id": "K1w3uWc",
-      "status": "Active",
-      "priority": "Low"
-    },
-    {
-      "title": "asdasdddddddddddddddddddddddddddddddddddddddddddddddd",
-      "content": "ddddddddddd",
-      "authorId": "5eb51e3d941e142f584b5eea",
-      "authorName": "Maxine Alexander",
-      "data": "",
-      "date": "2020-05-28T12:45:40.984Z",
-      "id": "36hq2yU",
-      "status": "Active",
-      "priority": "Low"
-    },
-    {
       "title": "asd",
       "content": "asdads",
       "authorId": "5eb51e3d941e142f584b5eea",
@@ -95,50 +84,6 @@
       "id": "KtaJ4dI",
       "status": "Active",
       "priority": "Low"
-    },
-    {
-      "title": "aaa",
-      "content": "aaa",
-      "authorId": "5eb51e3d941e142f584b5eea",
-      "authorName": "Maxine Alexander",
-      "data": "",
-      "date": "2020-05-28T13:08:00.678Z",
-      "id": "jiiT8F_",
-      "status": "Active",
-      "priority": "Low"
-    },
-    {
-      "title": "My first note",
-      "content": "test 1",
-      "authorId": "5eb51e3d941e142f584b5eea",
-      "authorName": "Maxine Alexander",
-      "data": "",
-      "date": "2020-06-02T08:22:51.297Z",
-      "id": "EUs5qBM",
-      "status": "Active",
-      "priority": "Low"
-    },
-    {
-      "title": "ss",
-      "content": "sss",
-      "authorId": "PbVvp7n",
-      "authorName": "Alexandar Draev",
-      "data": "",
-      "priority": "High",
-      "status": "Pending",
-      "date": "2020-06-02T20:32:26.763Z",
-      "id": "bleaepB"
-    },
-    {
-      "title": "sdf",
-      "content": "sdf",
-      "authorId": "PbVvp7n",
-      "authorName": "Alexandar Draev",
-      "data": "",
-      "priority": "High",
-      "status": "Done",
-      "date": "2020-06-02T20:41:50.387Z",
-      "id": "uqfiH06"
     },
     {
       "title": "w",
@@ -161,6 +106,17 @@
       "date": "2020-06-05T08:43:14.751Z",
       "priority": "Low",
       "id": "UMSAeI7"
+    },
+    {
+      "title": "abc",
+      "content": "asd",
+      "authorId": "NxqGu2p",
+      "authorName": "Alexandar Draev",
+      "data": "",
+      "status": "Done",
+      "date": "2020-06-05T09:02:05.938Z",
+      "priority": "Low",
+      "id": "Vkws6ZQ"
     }
   ]
 }
