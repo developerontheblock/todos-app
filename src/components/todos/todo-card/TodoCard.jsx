@@ -45,7 +45,7 @@ export function TodoCard({ todo, onDeleteClick }) {
 
     let todoClassByPriority = "card text-white m-3 ";
     switch (todo.priority) {
-        case TodosPriority.Low
+        case TodosPriority.Low:
             todoClassByPriority += "bg-success";
             break;
         case TodosPriority.Medium:
