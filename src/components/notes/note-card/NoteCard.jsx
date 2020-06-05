@@ -18,18 +18,28 @@ export function NoteCard({ note, onDeleteClick }) {
     const loggedUser = getLoggedUser();
 
     let noteClassByStatus = "card text-white m-3 ";
+    let noteImg = "https://picsum.photos/200/100?random=1.jpg";
+
     switch (note.status) {
         case NotesStatus.Active:
             noteClassByStatus += "bg-info";
+            noteImg += "https://picsum.photos/200/100?random=2.jpg";
+
             break;
         case NotesStatus.Done:
             noteClassByStatus += "bg-success";
+            noteImg += "https://picsum.photos/200/100?random=3.jpg";
+
             break;
         case NotesStatus.Pending:
             noteClassByStatus += "bg-warning";
+            noteImg += "https://picsum.photos/200/100?random=4.jpg";
+
             break;
         default:
             noteClassByStatus += "bg-info";
+            noteImg += "https://picsum.photos/200/100?random=5.jpg";
+
             break;
     }
 
@@ -52,6 +62,8 @@ export function NoteCard({ note, onDeleteClick }) {
     return (
 
         <div className={noteClassByStatus} style={noteCardStyle}>
+                        <img class="card-img-top" src={noteImg} alt="Card image cap" />
+
             <div className="card-header">
                 {note.title}
             </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const styles = {
     backgroundColor: 'lightgray',
-    height: '20px',
+    height: '30px',
     width: '100%',
     position: 'fixed',
     bottom: 0
@@ -11,7 +11,7 @@ const styles = {
 export function Footer() {
     return (
         <div className="footer" style={styles}>
-            Footer works
+            Footer 
         </div>
     );
 }
