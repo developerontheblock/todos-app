@@ -12,29 +12,25 @@ npm run json-server # starts server
 ```
 
 ## Requirements
-Студентите разработват самостоятелен курсов проект в рамките на триместъра. Изискванията за проекта са както следва:
 
-Да се създаде приложение с ReactJS, което да има следната функционалност:
+ReactJS application that has the following functionality:
 
-1. Автентикация:
- - регистрация, при която потребителят by default няма администраторски права
- - потребител може да влезе в системата с потребителско име и парола
- - потребителите могат да бъдат или да не бъдат администратори
-
-2. Управление на потребители
- - администраторите могат да добавят, редактират, изтриват и преглеждат потребителите в системата, както и да дават администраторски права на съществуващи потребители
- - при изтриване на даден потребител, всички негови задачи също трябва да бъдат изтрити ( Cascade Deletion )
-
-3. Управление на задачи
- - всеки потребител може да създава, изтрива, редактира и преглежда задачи
- - задачата се състои от: заглавие; описание; оценка (време в часове); 
- - статут на задачата (приключена, чакаща изпълнение). 
- - редакцията/изтриването на задачите става по следният начин 
-   - администраторът може да изтрива/променя всички задачи, а потребителят - само тези, които той е създал
-
-Приложението да се реализира със следните детайли
- - LocalStorage като база данни
- - React Routing за навигация между компонентите
+1. Authentication:
+- registration in which the user by default has no administrator rights
+- a user can log in with a username and password
+- users may or may not be administrators
+2. User management
+- administrators can add, edit, delete and view users in the system, as well as give administrator rights to existing users
+- when deleting a user, all his tasks must also be deleted (Cascade Deletion)
+3.Task management
+- each user can create, delete, edit and view tasks
+- the task consists of: title; description; assessment (time in hours);
+- status of the task (completed, pending execution).
+- the editing / deleting of the tasks is done as follows
+- the administrator can delete / change all tasks, and the user - only those he has created
+4. The application to be realized with the following details
+- LocalStorage as a database
+- React Routing for navigation between components
 
 ## License
 [Docs](https://docs.google.com/document/d/1jpIJo9LBsPsH5L2QzlfYQ_yry_EU3Nrn6l05ZR4jV_E/edit)
